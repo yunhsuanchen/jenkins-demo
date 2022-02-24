@@ -43,6 +43,8 @@ pipeline {
                     #!/bin/sh
                     python3 ./pipeline.py
                 '''
+                plot csvFileName: 'metric1.csv', csvSeries: [[file: 'plot_metric1.csv']], group: 'Measures', title: 'Metric 1', style: 'line', yaxis: 'Metric 1'
+                plot csvFileName: 'metric2.csv', csvSeries: [[file: 'plot_metric2.csv']], group: 'Measures', title: 'Metric 2', style: 'line', yaxis: 'Metric 2'
                 echo 'Pipeline run completed.'
             } // steps
         } // stage
