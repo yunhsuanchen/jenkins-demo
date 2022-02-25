@@ -7,6 +7,7 @@ pipeline {
                 echo 'Starting code checkout stage.'
                 sh '''
                     #!/bin/sh
+                    echo "hello"
                     rm -rf
                 '''
                 git credentialsId: 'nadia-git', url: 'https://github.com/yunhsuanchen/jenkins-demo.git'
