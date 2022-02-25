@@ -9,7 +9,7 @@ pipeline {
                     #!/bin/sh
                     rm -rf
                 '''
-                git credentialsId: 'nadia-git', url: 'https://github.com/cmu-seai/jenkins-demo.git'
+                git credentialsId: 'nadia-git', url: 'https://github.com/yunhsuanchen/jenkins-demo.git'
                 echo 'Code checked out successfully.'
             } // steps
         } // stage
